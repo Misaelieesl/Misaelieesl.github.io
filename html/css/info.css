@@ -1,0 +1,22 @@
+header{
+    display: flex;
+    min-height: 70px;
+    justify-content: space-between;
+    color: black;
+    align-items: center;
+    padding: 10px;
+    background-color: #2D56EB;
+    padding-right: 60px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    
+    
+}
+
+.logo img{
+    margin-right: 10px; 
+    height: 80px
+    
+}

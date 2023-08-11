@@ -1,0 +1,68 @@
+body{
+    /* background-image: url(panoramica.jpg); */
+    background-image: url(imagenes/cupula.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    font-family: sans-serif;
+    margin: 0;
+    
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+header{
+    display: flex;
+    min-height: 70px;
+    justify-content: space-between;
+    color: black;
+    align-items: center;
+    padding: 10px;
+    background-color: #2D56EB;
+    padding-right: 60px;
+    width: 100%;
+    
+    /* margin-right: 800px; */
+
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    /* margin-right: 800px; */
+    /* min-width: 1100px; */
+    
+}
+
+.logo img{
+    margin-right: 10px; 
+    height: 80px
+    
+}
+
+nav a{
+    font-size: 18px;
+    padding: 17px;
+    text-transform: uppercase;
+}
+
+nav a:hover{
+   
+    color: rgb(175, 217, 241);
+    
+}
+
+@media (max-width:700px){
+    header{
+        flex-direction: column;
+    }
+}
+
+nav{
+    padding: 10px 0px;
+    
+}

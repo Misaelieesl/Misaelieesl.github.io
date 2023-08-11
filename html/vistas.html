@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/vistas.css">
+  <title>Vistas</title>
+
+  <style>
+    #imagenSrc {
+        position: center center;
+        size: cover;
+        display: flex;
+        
+    }
+</style>
+
+  <script>
+    function abrirVentana() {
+        var seleccion = document.getElementById("opcion").value;
+        var imagenSrc = "";
+
+        switch (seleccion) {
+            case "opcion1":
+                imagenSrc = "rutas/Pabellon1.png";
+                break;
+            case "opcion2":
+                imagenSrc = "rutas/Pabellón2.png";
+                break;
+            case "opcion3":
+                imagenSrc = "rutas/registro.png";
+                break;
+            case "opcion4":
+                imagenSrc = "rutas/Ingenieria.png";
+                break;
+            case "opcion5":
+                imagenSrc = "rutas/Biblioteca.png";
+                break;
+            case "opcion6":
+                imagenSrc = "rutas/Bienestar estudiantil y psicologia.png";
+                break;
+            case "opcion7":
+                imagenSrc = "rutas/Laboratorio de Biología.png";
+                break;
+            case "opcion8":
+                imagenSrc = "rutas/Auditorio Menor.png";
+                break;
+            case "opcion9":
+                imagenSrc = "rutas/Pastoral.png";
+                break;
+            case "opcion10":
+                imagenSrc = "rutas/Enfermeria.png";
+                break;
+            case "opcion11":
+                imagenSrc = "rutas/Cafeteria.png";
+                break;
+            case "opcion12":
+                imagenSrc = "rutas/Libreria.png";
+                break;
+            case "opcion13":
+                imagenSrc = "rutas/Caja.png";
+                break;
+        }
+            if (imagenSrc !== "") {
+                var nuevaVentana = window.open("", "_blank");
+                nuevaVentana.document.write('<img src="' + imagenSrc + '">');
+                nuevaVentana.document.close();
+    }   }
+</script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="imagenes/Logo.png" alt="logo de la pagina">
+            <h2 class="nombe-empresa">Location IEESL</h2>
+        </div>
+
+    </header>
+        
+            <img class="logo-ipl" src="imagenes/loyola.png" alt="logo ipl">
+            
+            
+            <div class="container">
+                       
+                                                    
+                    <h1>Mapas disponibles</h1>                              
+                                                            
+            
+                <h4>SELECCIONE UN MAPA:</h4>
+                <select id="opcion">
+                <option disabled delectada="Seleccione un mapa">Seleccione un mapa
+                </option>
+                <option value="opcion1">Pabellón 1</option>
+                <option value="opcion2">Pabellón 2</option>
+                <option value="opcion3">Registro</option>
+                <option value="opcion4">Ingeniería</option>
+                <option value="opcion5">Biblioteca</option>
+                <option value="opcion6">Bienestar Estudiantil y Psicología</option>
+                <option value="opcion7">Laboratorio de Biologia</option>
+                <option value="opcion8">Auditorio Menor</option>
+                <option value="opcion9">Pastoral</option>
+                <option value="opcion10">Enfermería</option>
+                <option value="opcion11">Cafetería</option>
+                <option value="opcion12">Librería</option>
+                <option value="opcion13">Caja</option>
+                </select>
+                
+                <button onclick="abrirVentana()">
+                    <span>Ver Mapa</span>
+                </button>
+
+                <img id="imagen" src="" alt="Imagen a mostrar">
+                
+                <!-- <script>
+                    // Obtén referencias a los elementos HTML
+                    var listaDesplegable = document.getElementById("opciones");
+                    var botonAccionar = document.getElementById("accionar");
+            
+                    // Agrega un evento de click al botón
+                    botonAccionar.addEventListener("click", function() {
+                        // Obtén el valor de la opción seleccionada en la lista desplegable
+                        var opcionSeleccionada = listaDesplegable.value;
+                        
+                        // Realiza la acción deseada en función de la opción seleccionada
+                        switch(opcionSeleccionada) {
+                            case "opcion1":
+                                // Acción para la opción 1
+                                // alert("Has seleccionado la Opción 1");
+                                 
+                                break;
+                            case "opcion2":
+                                // Acción para la opción 2
+                                alert("Has seleccionado la Opción 2");
+                                break;
+                            case "opcion3":
+                                // Acción para la opción 3
+                                alert("Has seleccionado la Opción 3");
+                                break;
+                            default:
+                                // Acción por defecto si no se reconoce la opción
+                                alert("Opción no reconocida");
+                                break;
+                        }
+                    });
+                </script> -->
+
+                
+            
+            <!-- En este ejemplo, cuando el usuario selecciona una opción de la lista desplegable y luego hace clic en el botón "Accionar", se captura el valor de la opción seleccionada y se realiza una acción específica según la opción elegida. Puedes personalizar las acciones en el switch de acuerdo a tus necesidades.
+            
+            Recuerda que este es un ejemplo básico. Si estás trabajando en un proyecto más grande, podrías considerar utilizar frameworks JavaScript como React, Angular o Vue.js para una gestión más avanzada de la interfaz de usuario.
+             -->
+            
+            
+            
+            
+            
+
+
+            </div>
+        
+        
+    
+    
+</body>
+</html>
